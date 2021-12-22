@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyWeather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fcbd625608.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles-new.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container card col-6">
+      <div class="row cities">
+        <div class="col-3">Madrid</div>
+        <div class="col-3">Barcelona</div>
+        <div class="col-3">Zaragoza</div>
+        <div class="col-3">Bilbao</div>
+      </div>
+
+      <form id="search-engine">
+        <div class="row">
+          <div class="col-6 forminline search-engine">
+            <input
+              type="text"
+              id="inputPassword5"
+              class="form-control form-inline search-engine"
+              placeholder="type a city"
+              autofocus
+            />
+          </div>
+          <div class="col-1">
+            <button type="submit" class="search-button">
+              <i class="fas fa-search search-icone"></i>
+            </button>
+          </div>
+          <div class="col-3">
+            <button
+              type="button"
+              class="btn btn-warning"
+              id="current-weather-button"
+            >
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-6">
+          <h2>
+            <div id="sun"><i class="fas fa-sun sun-icone-main"></i></div>
+            <div class="current-temp">
+              <span id="temperature-number"></span>
+              <small class="temperatures"> °C </small>
+            </div>
+            <span id="weather-description"></span>
+          </h2>
+        </div>
+        <div class="col-6">
+          <h1 class="city" id="city"></h1>
+          <header class="today-info">
+            <span id="current-date">today, Sat 20/11</span>
+            <div class="time" id="current-hour">13:30</div>
+            wind: <span id="wind"> </span> km/h
+            <br />
+            humidity: <span id="humidity"></span> %
+            <br />
+            <div class="day-night-temp">
+              <strong><span id="max-temp"></span>°C</strong> /
+              <span id="min-temp"></span>°C
+            </div>
+          </header>
+        </div>
+      </div>
+      <br />
+      <p class="reminder">Remember to drink a lot of water!</p>
+      <hr />
+      <div class="row next-days">
+        <div class="col">
+          <span class="days">Th</span>
+          <br />
+          <i class="fas fa-sun sun-icone"></i>
+          <br />
+          <strong>30°C</strong> / 23°C
+        </div>
+        <div class="col">
+          <span class="days">Fr</span>
+          <br />
+          <i class="fas fa-cloud cloud-icone"></i>
+          <br />
+          <strong>26°</strong>C / 19°C
+        </div>
+        <div class="col">
+          <span class="days">Sat</span>
+          <br />
+          <i class="fas fa-cloud cloud-icone"></i>
+          <br />
+          <strong>27°C</strong> / 19°C
+        </div>
+        <div class="col">
+          <span class="days">Sun</span>
+          <br />
+          <i class="fas fa-sun sun-icone"></i>
+          <br />
+          <strong>32°C</strong> / 25°C
+        </div>
+        <div class="col">
+          <span class="days">Mon</span>
+          <br />
+          <i class="fas fa-sun sun-icone"></i>
+          <br />
+          <strong>33°C</strong> / 25°C
+        </div>
+      </div>
+    </div>
+    <p class="open-source-info">
+      <a href=" ">Open-source code</a> by Kasia Jura
+    </p>
+    <script src="app.js"></script>
+  </body>
+</html>

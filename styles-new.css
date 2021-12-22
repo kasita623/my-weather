@@ -1,0 +1,100 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 45px;
+  position: relative;
+  text-align: center;
+  top: 40px;
+  left: 30px;
+}
+.container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+
+  margin: 80px auto;
+  max-width: 90%;
+  padding-bottom: 35px;
+  padding-top: 10px;
+}
+.cities {
+  margin-top: 10px;
+  text-align: center;
+}
+.search-engine {
+  display: inline;
+  margin: 15px;
+}
+.search-button {
+  background-color: transparent;
+  border: none;
+  max-width: 40px;
+  position: relative;
+  top: 35px;
+  right: 13px;
+}
+.search-button:hover {
+  opacity: 0.5;
+}
+
+#current-weather-button {
+  opacity: 0.9;
+  position: relative;
+  left: 10px;
+  top: 29px;
+}
+.current-temp {
+  font-weight: 600;
+}
+
+#weather-description {
+  font-size: 23px;
+  line-height: 1px;
+  text-transform: uppercase;
+}
+.temperatures {
+  font-size: 25px;
+  position: relative;
+  bottom: 15px;
+}
+.city {
+  font-size: 50px;
+}
+.today-info {
+  font-size: 15px;
+  text-align: center;
+}
+.time {
+  font-size: 30px;
+}
+.day-night-temp {
+  font-size: 25px;
+}
+.reminder {
+  font-style: italic;
+  margin-top: 10px;
+  opacity: 0.7;
+  text-align: center;
+}
+.sun-icone-main {
+  color: #ffaa5f;
+  font-size: 60px;
+}
+.sun-icone {
+  color: #ffaa5f;
+}
+.cloud-icone {
+  color: #0099ff;
+}
+.next-days {
+  text-align: center;
+}
+.days {
+  font-size: 20px;
+}
