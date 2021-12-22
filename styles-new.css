@@ -18,7 +18,7 @@ h2 {
     rgb(234, 241, 249) 90.1%
   );
 
-  margin: 80px auto;
+  margin: 80px auto 10px;
   max-width: 90%;
   padding-bottom: 35px;
   padding-top: 10px;
@@ -97,4 +97,7 @@ h2 {
 }
 .days {
   font-size: 20px;
+}
+.open-source-info {
+  text-align: center;
 }
